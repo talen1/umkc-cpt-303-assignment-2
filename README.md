@@ -12,15 +12,15 @@ This C++ program includes two parts:
 
 2. Compile the Code:
 
-For the Single Linked List part:
+# For the Single Linked List part:
 
-# g++ -o main Single_Linked_List.cpp main.cpp
+ g++ -o main Single_Linked_List.cpp main.cpp
 
-For the Employee Hierarchy part:
-# g++ -o main Employee.cpp main.cpp
+# For the Employee Hierarchy part:
+ g++ -o main Employee.cpp main.cpp
 
-3. Run the Executable:
-# ./main
+# 3. Run the Executable:
+ ./main
 
 The program will run and demonstrate the functionality of the Single Linked List and the Employee hierarchy.
 
