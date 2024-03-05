@@ -1,19 +1,26 @@
-#include <iostream>
-#include "Single_Linked_List.h"
-#include "Employee.h"
+#include "Stack.h"
+#include "SingleLinkedList.h"
 
 int main() {
-    // Test Single_Linked_List
-    Single_Linked_List<int> list;
-    list.push_back(1);
-    list.push_back(2);
-    list.push_back(3);
-    list.insert(1, 4);
-    list.remove(2);
+    // Demonstrate Stack functionality
+    Stack myStack;
+    std::cout << "Stack operations:" << std::endl;
+    myStack.push(10);
+    myStack.push(20);
+    std::cout << "Top element: " << myStack.top() << std::endl;
+    std::cout << "Average of stack: " << myStack.average() << std::endl;
+    myStack.pop();
+    std::cout << "After pop, top element: " << myStack.top() << std::endl;
 
-    std::cout << "List contents: ";
-    for (size_t i = 0; i < list.find(3); i++) {
-        std::cout << list.front() << " ";
-        list.pop_front();
-    }
-    std::cout << list.front
+    // Demonstrate Single_Linked_List functionality
+    Single_Linked_List<int> myList;
+    std::cout << "\nSingle Linked List operations:" << std::endl;
+    myList.push_front(1);
+    myList.push_back(2);
+    std::cout << "Front element: " << myList.front() << std::endl;
+    std::cout << "Back element: " << myList.back() << std::endl;
+    myList.pop_front();
+    std::cout << "After pop_front, front element: " << myList.front() << std::endl;
+
+    return 0;
+}
